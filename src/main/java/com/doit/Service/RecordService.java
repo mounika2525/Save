@@ -11,10 +11,23 @@ import java.util.List;
  */
 public interface RecordService {
 
-   // List<AudioRecords> saveByChapterId(Long audioId, Long chapterId, Long length, Long listen_Count, String rating, String reference, String topicName, String url);
+      // List<AudioRecords> saveByChapterId(Long audioId, Long chapterId, Long length, Long listen_Count, String rating, String reference, String topicName, String url);
 
-    List<AudioRecords> saveByChapterId();
+     // List<AudioRecords> saveByChapterId();
 
+
+     //  List<AudioRecords> saveByChapterId(Long audioId, Long chapterID);
+
+
+
+
+
+  // void insert( String topicname);
+
+
+
+
+    void insert(Long chapterid, Long length, Long listen_count, String rating, String reference, String topicname, String url);
 }
 
 
